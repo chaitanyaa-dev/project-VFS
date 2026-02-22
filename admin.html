@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page-header">
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+    </div>
+</section>
+
+<section class="admin-section">
+    <div class="container">
+
+        <h2>Client Inquiries</h2>
+
+        <div class="table-wrapper">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Service</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for inquiry in inquiries %}
+                    <tr>
+                        <td>{{ inquiry.id }}</td>
+                        <td>{{ inquiry.name }}</td>
+                        <td>{{ inquiry.phone }}</td>
+                        <td>{{ inquiry.email }}</td>
+                        <td>{{ inquiry.service }}</td>
+                        <td>{{ inquiry.message }}</td>
+                        <td>{{ inquiry.created_at }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

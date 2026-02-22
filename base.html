@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtue Financial Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">
+            Virtue Financial Services
+        </div>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/services">Services</a>
+            <a href="/process">Our Process</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <span class="phone">+91 XXXXX XXXXX</span>
+            <a href="/contact" class="btn-primary">Schedule Consultation</a>
+        </div>
+    </div>
+</header>
+
+{% block content %}{% endblock %}
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <h3>Virtue Financial Services</h3>
+            <p>15+ Years of Trusted Financial Advisory</p>
+            <p>Latur, Maharashtra</p>
+            <p>Providing disciplined and transparent financial solutions for families and businesses.</p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/services">Services</a>
+            <a href="/process">Our Process</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <div>
+            <h4>Services</h4>
+            <p>Life Insurance</p>
+            <p>Health Insurance</p>
+            <p>Vehicle Insurance</p>
+            <p>Mutual Funds</p>
+            <p>Specialized Investment Funds</p>
+            <p>Alternate Investment Funds</p>
+            <p>Financial Planning</p>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>Latur, Maharashtra</p>
+            <p>Phone: +91 XXXXX XXXXX</p>
+            <p>Email: info@virtuefinancial.in</p>
+            <p>Mon–Sat: 9 AM – 6 PM</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Virtue Financial Services | 
+        <a href="/legal">Privacy Policy</a> |
+        <a href="/legal">Terms & Conditions</a> |
+        <a href="/legal">Disclaimer</a>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/91XXXXXXXXXX" 
+   class="whatsapp-float" 
+   target="_blank">
+   WhatsApp
+</a>
+
+</body>
+</html>
